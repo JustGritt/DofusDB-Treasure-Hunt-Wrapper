@@ -36,6 +36,7 @@ function createWindow() {
     hasShadow: false,
     roundedCorners: false,
     alwaysOnTop: true,
+    alwaysOnTopLevel: 'screen-saver',
     frame: false,
     transparent: true,
     acceptFirstMouse: true,
@@ -54,6 +55,13 @@ function createWindow() {
 
     const [newWidth, newHeight] = win.getSize();
     sizeStore.set({ width: newWidth, height: newHeight });
+  });
+
+  win.on('blur', () => {
+    if (win) {
+      win.setAlwaysOnTop(true, 'screen-saver');
+      win.focus();
+    }
   });
 
   loadUrl();
