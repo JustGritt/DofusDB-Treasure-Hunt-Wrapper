@@ -1,0 +1,147 @@
+:root {
+  --primary: #525272;
+  --secondary: #1B1D32;
+  --accent: #3A3D58;
+  --border-radius: 8px;
+}
+
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+  background: var(--secondary);
+  border-radius: var(--border-radius);
+}
+
+.grecaptcha-badge {
+  display: none;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  background: var(--primary);
+  padding: 0.25rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  app-region: no-drag;
+  margin-bottom: 100px;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  -webkit-app-region: drag;
+}
+
+.app-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.exit-btn {
+  cursor: pointer;
+  border: none;
+  background: var(--accent);
+  color: inherit;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  -webkit-app-region: no-drag;
+}
+
+.exit-btn:hover {
+  filter: brightness(1.1);
+}
+
+.dropdown-content a {
+  margin: 8px;
+  color: white;
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.treasure-hunt-directions {
+  background: var(--secondary) !important;
+  transform: scale(0.75) rotate(45deg) !important;
+}
+
+.q-field__inner,
+main,
+main > div.bg-primary {
+  background: var(--secondary) !important;
+}
+
+.q-btn__wrapper {
+  background: var(--primary) !important;
+}
+
+.q-page > div > div:nth-child(3),
+.q-page > div > div:nth-child(7),
+.q-checkbox {
+  margin-top: 1.5rem;
+}
+
+.q-page>div>div:first-child,
+.q-page>div>div:nth-child(2),
+.q-page>div>div:nth-child(4),
+.q-page>div>div:nth-child(6),
+.q-header,
+.q-card>div:nth-child(4),
+.q-card>div.text-center.q-pa-xs.text-grey-6,
+.q-loading-bar,
+.q-footer,
+.q-notifications {
+  display: none !important;
+}
+
+.q-card > div:first-child.text-h5,
+.q-card > div:nth-child(2).text-h6 {
+  font-size: 1rem;
+}
+
+.q-field__bottom,
+.q-field__append {
+  display: none !important;
+}
+
+@media screen and (min-width: 599px) {
+  .q-page > div:first-child {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .q-card {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    padding: 1rem;
+  }
+
+  .q-card > div:first-child.text-h5 {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .q-card > div:nth-child(2).text-h6,
+  .q-card > div:first-child.text-h5 {
+    padding: 2px;
+  }
+
+  span button[type="button"][role="button"] {
+    font-size: 1rem !important;
+  }
+
+  .q-card {
+    width: 100%;
+  }
+}
