@@ -27,6 +27,6 @@ This is only a wrapper for the [DofusDB tool](https://dofusdb.fr/fr/tools/treasu
 2. Follow the on-screen instructions to use the treasure hunt features.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-Icon made by [Freepik](https://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com).
-Credits to [DofusDB](https://dofusdb.fr) for providing the treasure hunt tool.
+- This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+- Icon made by [Freepik](https://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com).
+- Credits to [DofusDB](https://dofusdb.fr) for providing the treasure hunt tool.
