@@ -1,18 +1,51 @@
 {
-  "name": "electron",
+  "name": "dofusdb-treasurehunt-wrapper",
   "version": "1.0.0",
+  "description": "An Electron wrapper for the DofusDB Treasure Hunt tool.",
   "main": "main.js",
-  "scripts": {
-    "dev": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+  "author": "Your Name <your.email@example.com>",
   "type": "module",
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "build": {
+    "appId": "com.dofusdb.treasurehunt.app",
+    "productName": "DofusDB Treasure Hunt Wrapper",
+    "directories": {
+      "output": "dist"
+    },
+    "compression": "maximum",
+    "npmRebuild": false,
+    "asar": true,
+    "files": [
+      "**/*",
+      "!**/*.map",
+      "!**/tests/**",
+      "!**/*.md",
+      "!docs/**",
+      "!coverage/**"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
+    "electron": "^33.3.1",
+    "electron-builder": "^25.1.8"
+  },
   "dependencies": {
-    "electron": "^33.2.1",
     "electron-store": "^10.0.0"
   }
 }

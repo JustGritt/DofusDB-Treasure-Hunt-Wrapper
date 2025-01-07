@@ -26,3 +26,4 @@ The DofusDB Treasure Hunt Wrapper is an Electron application designed to assist 
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Icon made by [Freepik](https://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com).
