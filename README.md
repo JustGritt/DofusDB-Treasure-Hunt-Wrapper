@@ -3,6 +3,8 @@
 ## Description
 The DofusDB Treasure Hunt Wrapper is an Electron application designed to assist players of the game Dofus with treasure hunts. It provides a user-friendly interface to interact with the DofusDB tool and retrieve treasure hunt clues and solutions.
 
+This is only a wrapper for the [DofusDB tool](https://dofusdb.fr/fr/tools/treasure-hunt) and does not provide any additional features.
+
 ## Installation
 1. Clone the repository:
     ```bash
@@ -27,3 +29,4 @@ The DofusDB Treasure Hunt Wrapper is an Electron application designed to assist 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 Icon made by [Freepik](https://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com).
+Credits to [DofusDB](https://dofusdb.fr) for providing the treasure hunt tool.
